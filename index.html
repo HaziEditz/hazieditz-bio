@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal bio website">
+    <title>Admer | Bio</title>
+    <link rel="stylesheet" href="hazieditz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar" id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            &#9776;
+        </a>
+    </div>
+
+    <header>
+        <h1>Ademir</h1>
+        <p>Creative Developer | Designer | Technologist</p>
+    </header>
+
+    <section class="main-content">
+        <div class="bio-section" id="about">
+            <h2>About Me</h2>
+            <p>Hello, I am Ademir! I am a coder, road-to-pro footballer, editor, and, a muslim. I am a web developer, connect with me if you need one!</p>
+        </div>
+        <div class="bio-section" id="skills">
+            <h2>Skills</h2>
+            <p>After Effects | Capcut | Alight Motion | Sport | Web Development | Editing | Much More!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://discord.gg/B3K6eTKrjs" target="_blank">Discord</a>
+        <a href="https://wa.me/+64210497275" target="_blank">WhatsApp</a>
+        <a href="mailto:hasnat.abdullahcool@gmail.com" target="_blank">Email</a>
+    </footer>
+
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+            }
+        }
+    </script>
+
+</body>
+</html>
